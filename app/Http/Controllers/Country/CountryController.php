@@ -38,6 +38,7 @@ class CountryController extends Controller
     }
     
     public function countryUpdate(Request $request, CountryModel $country){
+        
         $country->update($request->all());
         return response()->json($country, 200);
     }
